@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Vehicle with Track System</title>
+</head>
+<body>
+    <h1>Register Vehicle with Track System</h1>
+    <form action="/vehicle-tracks/register-vehicle" method="post">
+        <label for="vehicleId">Vehicle ID:</label>
+        <input type="text" id="vehicleId" name="vehicleId" required>
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        <br>
+        <label for="trackingSystemId">Tracking System ID:</label>
+        <input type="text" id="trackingSystemId" name="trackingSystemId" required>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
